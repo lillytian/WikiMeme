@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+$enable-gradients
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -7,14 +8,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/style.css">
     <title>WikiMeme</title>
+
   </head>
 
   <header>
 <!-- Fixed navbar -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
- <a class="navbar-brand" href="#">Find Your Meme</a>
+ <a class="navbar-brand" href="#"><img src="images/icon.png" alt="" style="padding-right:2px">Find Your Meme</a>
  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
    <span class="navbar-toggler-icon"></span>
  </button>
@@ -23,29 +25,147 @@
      <li class="nav-item active">
        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
      </li>
-     <li class="nav-item">
-       <a class="nav-link" href="#">Explore</a>
+     <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+        role="button" data-toggle="dropdown">Explore</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">A-Z</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">A</a></li>
+                      <li><a class="dropdown-item" href="#">B</a></li>
+                      <li><a class="dropdown-item" href="#">C</a></li>
+                      <li><a class="dropdown-item" href="#">D</a></li>
+                      <li><a class="dropdown-item" href="#">E</a></li>
+                      <li><a class="dropdown-item" href="#">F</a></li>
+                      <li><a class="dropdown-item" href="#">G</a></li>
+                      <li><a class="dropdown-item" href="#">H</a></li>
+                      <li><a class="dropdown-item" href="#">I</a></li>
+                      <li><a class="dropdown-item" href="#">J</a></li>
+                      <li><a class="dropdown-item" href="#">K</a></li>
+                      <li><a class="dropdown-item" href="#">L</a></li>
+                      <li><a class="dropdown-item" href="#">M</a></li>
+                      <li><a class="dropdown-item" href="#">N</a></li>
+                      <li><a class="dropdown-item" href="#">O</a></li>
+                      <li><a class="dropdown-item" href="#">P</a></li>
+                      <li><a class="dropdown-item" href="#">Q</a></li>
+                      <li><a class="dropdown-item" href="#">R</a></li>
+                      <li><a class="dropdown-item" href="#">S</a></li>
+                      <li><a class="dropdown-item" href="#">T</a></li>
+                      <li><a class="dropdown-item" href="#">U</a></li>
+                      <li><a class="dropdown-item" href="#">V</a></li>
+                      <li><a class="dropdown-item" href="#">W</a></li>
+                      <li><a class="dropdown-item" href="#">X</a></li>
+                      <li><a class="dropdown-item" href="#">Y</a></li>
+                      <li><a class="dropdown-item" href="#">Z</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Years</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">2019</a></li>
+                      <li><a class="dropdown-item" href="#">2018</a></li>
+                      <li><a class="dropdown-item" href="#">2017</a></li>
+                      <li><a class="dropdown-item" href="#">2016</a></li>
+                      <li><a class="dropdown-item" href="#">2015</a></li>
+                      <li><a class="dropdown-item" href="#">2014</a></li>
+                      <li><a class="dropdown-item" href="#">2013</a></li>
+                      <li><a class="dropdown-item" href="#">2012</a></li>
+                      <li><a class="dropdown-item" href="#">2011</a></li>
+                      <li><a class="dropdown-item" href="#">2010</a></li>
+                      <li><a class="dropdown-item" href="#">2009</a></li>
+                      <li><a class="dropdown-item" href="#">2008</a></li>
+                      <li><a class="dropdown-item" href="#">2007</a></li>
+                      <li><a class="dropdown-item" href="#">2006</a></li>
+                      <li><a class="dropdown-item" href="#">2005</a></li>
+                      <li><a class="dropdown-item" href="#">2004</a></li>
+                      <li><a class="dropdown-item" href="#">2003</a></li>
+                      <li><a class="dropdown-item" href="#">2002</a></li>
+                      <li><a class="dropdown-item" href="#">2001</a></li>
+                      <li><a class="dropdown-item" href="#">2000</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Recent</a></li>
+        </ul>
      </li>
      <li class="nav-item">
-       <a class="nav-link" href="#">About</a>
+       <a class="nav-link" href="/about">About</a>
+     </li>
+     <li class="nav item">
+       <a class="nav-link" href="/memes/add">Add a Meme</a>
      </li>
    </ul>
    <form class="form-inline mt-2 mt-md-0">
      <input class="form-control mr-sm-2" type="text" placeholder="Search the database" aria-label="Search the database">
-     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+     <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
    </form>
  </div>
 </nav>
 </header>
 
   <body>
-    <div align="center" style="padding:60px">
-      <h1>WikiMeme</h1>
+    <div align="center" style="padding-top:80px; padding-bottom:20px">
+      <img src="images/name-logo-tails.png"/>
     </div>
-      <h3>Featuring</h3>
-      <h3>Hot This Month</h3>
-      <h3>Random</h3>
-      <h3>Hall of Fame</h3>
+
+  <div align="center">
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg">
+          <div class="rosegold">
+            <img src="images/featuring-tab.png"/>
+            </div>
+        </div>
+        <div class="col col-lg-7">
+            <div class= 'hot'>
+              <div><h3><font face="Arial" size="5 rem">HOT THIS MONTH</font></h3></div>
+            </div>
+              <div style="padding:20px" id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-pause="hover">
+              <div class="carousel-inner">
+                <div class="carousel-item active" class="center-cropped" style="width: 650px; height: 300px; overflow: hidden">
+                  <img class="d-block w-100" height="300" src="images/test1.jpg" alt="First slide">
+                  <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>This is a meme!</h5>
+                    <p>Can you believe this is a meme? We can't!</p>
+                  </div> -->
+                </div>
+                <div class="carousel-item" class="center-cropped" style="width: 650px; height: 300px; overflow: hidden">
+                  <img class="d-block w-100" height="300" src="images/test2.jpg" alt="Second slide">
+                  <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>This is a meme!</h5>
+                    <p>Can you believe this is a meme? We can't!</p>
+                  </div> -->
+                </div>
+                <div class="carousel-item" class="center-cropped" style="width: 650px; height: 300px; overflow: hidden">
+                  <img class="d-block w-100" height="300" src="images/test3.jpg" alt="Third slide">
+                  <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>This is a meme!</h5>
+                    <p>Can you believe this is a meme? We can't!</p>
+                  </div> -->
+                </div>
+                <div class="carousel-item" class="center-cropped" style="width: 650px; height: 300px; overflow: hidden">
+                  <img class="d-block w-100" height="300" src="images/test4.jpg" alt="Fourth slide">
+                  <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>This is a meme!</h5>
+                    <p>Can you believe this is a meme? We can't!</p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
+        </div>
+        <div class="col col-lg">
+          <div class= 'gold'>
+           <h3><font face="Arial" size="5 rem">HALL OF FAME</font></h3>
+        </div>
+      </div>
+    </div>
+
+
+  <div align="center" style="padding-top:100px">
+      <div align="center" style="padding:15px">
+    <button type="button" class="btn btn-light"><font color="#c42400">Random Meme</font></button>
+      </div>
+    </div>
+</div>
 
 
     <!-- Optional JavaScript -->
